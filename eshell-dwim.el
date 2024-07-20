@@ -17,6 +17,7 @@
 (require 'esh-mode)
 (require 'em-dirs)
 
+;;;###autoload
 (defun eshell-dwim (&optional arg)
   "Do open eshell smartly.
 
@@ -55,6 +56,7 @@ With two or more universal ARG, open in current window."
                    (t
                     (switch-to-buffer-other-window buffer))))))))
 
+;;;###autoload
 (defun eshell-dwim-project (&optional arg)
   "Do open a project-wide eshell smartly.
 ARG see `eshell-dwim'."
